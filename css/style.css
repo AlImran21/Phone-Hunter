@@ -1,0 +1,31 @@
+/* explore button style */
+.exp-btn {
+    background-color: rgb(158, 45, 158);
+    color: whitesmoke;
+    padding: 10px 43px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+}
+/* mainfeatures font style */
+.Mainfeatures-font {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* sensor font style */
+.sensors-font {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+/* others font style */
+.others-font {
+    font-size: 20px;
+    font-weight: 500;
+}
+/* MORE DETAIL INFORMATION CARD WIDTH */
+.width {
+    width: 400px;
+    height: 100%;
+}
