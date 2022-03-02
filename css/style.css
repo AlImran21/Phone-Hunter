@@ -1,4 +1,7 @@
 /* explore button style */
+body {
+    box-sizing: border-box;
+}
 .exp-btn {
     background-color: rgb(158, 45, 158);
     color: whitesmoke;
@@ -26,6 +29,6 @@
 }
 /* MORE DETAIL INFORMATION CARD WIDTH */
 .width {
-    width: 400px;
+    width: 350px;
     height: 100%;
 }

@@ -1,6 +1,6 @@
 const searchPhone = () => {
     const searchField = document.getElementById ('search-field');
-    const searchText = searchField.value;
+    let searchText = searchField.value;
     // console.log (searchText);
 
     searchField.value = '';
@@ -14,8 +14,9 @@ const searchPhone = () => {
 const displaySearchResult = data => {
     // console.log(data);
     const searchResult = document.getElementById ('search-result');
+    searchResult.textContent = '';
     data.forEach (brand => {
-        console.log (brand);
+        // console.log (brand);
         const div = document.createElement ('div');
         div.classList.add ('col');
         div.innerHTML = `
@@ -33,7 +34,7 @@ const displaySearchResult = data => {
 }
 
 const loadBrandDetail = brandId => {
-    console.log (brandId);
+    // console.log (brandId);
     const url = `https://openapi.programming-hero.com/api/phone/${brandId}`
     fetch (url)
     .then (res => res.json ())
@@ -41,8 +42,9 @@ const loadBrandDetail = brandId => {
 }
 
 const displayBrandDetail = brand => {
-    console.log (brand);
+    // console.log (brand);
     const phoneDetails = document.getElementById ('phone-details');
+    phoneDetails.textContent = '';
     const div = document.createElement('div');
     div.classList.add('card');
     div.innerHTML = `
